@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  margin: 25px;
+  width: 1425px;
+  height: 132px;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 81px;
+  }
+  ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+  }
+  .header_navbar {
+    :nth-child(4) {
+      background: #326259;
+      border-radius: 15px;
+     
+
+      a { width: 166px;
+      height: 56px;
+        color: #d9d9d9;
+      }
+    }
+  }
+  .navbar {
+    margin: 121px;
+  }
+  .login {
+    margin: 30px;
+  }
+}
