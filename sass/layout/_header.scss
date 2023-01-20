@@ -1,3 +1,7 @@
+html,
+body {
+  margin: 0;
+}
 header {
   display: flex;
   margin: 25px;
@@ -7,7 +11,8 @@ header {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-
+  font-size: 24px;
+  line-height: 29px;
   h1 {
     font-weight: 700;
     font-size: 32px;
@@ -18,24 +23,52 @@ header {
     list-style: none;
     display: flex;
     align-items: center;
+    padding: 0;
     a {
       text-decoration: none;
     }
   }
+  button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
   .header_navbar {
     :nth-child(4) {
-      background: #326259;
-      border-radius: 15px;
-     
-
-      a { width: 166px;
-      height: 56px;
+      button {
+        background: #326259;
+        border-radius: 15px;
+        width: 166px;
+        height: 56px;
         color: #d9d9d9;
+        border: none;
+        &:hover {
+          background-color: #4cac9a;
+          cursor: pointer;
+        }
+      }
+    }
+    :nth-child(5) {
+      button {
+        background-color: #d9d9d9;
+        border-radius: 15px;
+        width: 166px;
+        height: 56px;
+        border: none;
+        &:hover {
+          cursor: pointer;
+          background-color: #aca8a8;
+        }
       }
     }
   }
   .navbar {
-    margin: 121px;
+    margin: 77.5px;
+    a:hover {
+      color: #383535;
+    }
   }
   .login {
     margin: 30px;
