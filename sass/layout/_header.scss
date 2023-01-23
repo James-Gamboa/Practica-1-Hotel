@@ -1,31 +1,32 @@
-html,
-body {
-  margin: 0;
-}
 header {
   display: flex;
   margin: 25px;
-  width: 1425px;
-  height: 132px;
   align-items: center;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  h1 {
+  h2,
+  a {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    margin: 81px;
+    text-decoration: none;
+    color: #383535;
+  }
+
+  h2 {
+    margin: 3% 10%;
   }
   ol {
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0;
-    a {
-      text-decoration: none;
+    a:hover {
+      color: #464343db;
+      -webkit-text-stroke: 1px black;
     }
   }
   button {
@@ -65,12 +66,9 @@ header {
     }
   }
   .navbar {
-    margin: 77.5px;
-    a:hover {
-      color: #383535;
-    }
+    margin: 3% 10%;
   }
   .login {
-    margin: 30px;
+    margin: 3% 5%;
   }
 }
