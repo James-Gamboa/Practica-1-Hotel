@@ -22,8 +22,61 @@
         consectetur adipiscing elit. Sed eget facilisis est. Phasellus sed porta
         elit, sed sodales justo. Vivamus pretium odio odio, nec suscipit ligula
       </p>
-      <a href="#">Form</a>
-      <a href="#">Details</a>
+      <button type="button" onclick="formDisplay();">Form</button>
+      <button>Details</button>
     </div>
+
+    <section class="form-content" id="form-content">
+      <div class="form-content__text">
+        <h1>Contact</h1>
+        <p>
+          "Thank you for visiting our contact page. We are available for answer
+          any questions or concerns you may have. Please no feel free to contact
+          us. Thank you very much, we will reply to you as soon as possible!"
+        </p>
+      </div>
+      <form action="" class="form">
+        <label for="name">
+          <input
+            class="form__input"
+            type="name"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required/>
+        </label>
+        <label for="email">
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required/>
+        </label>
+        <label for="tel">
+          <input
+            class="form__input"
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Phone"
+            required/>
+        </label>
+        <label for="textarea">
+          <input
+            class="form__input form__input--comment"
+            type="textarea"
+            name="comment"
+            id="comment"
+            placeholder="Comment"/>
+        </label>
+        <div>
+            <button class="form__buttons" type="submit" name="send" id="send">Send</button>
+            <button class="form__buttons" type="reset" name="reset" id="reset">reset</button>
+        </div>
+      </form>
+    </section>
   </body>
+  <script src="form.js"></script>
 </html>
