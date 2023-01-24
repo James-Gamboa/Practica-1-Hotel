@@ -91,16 +91,16 @@ body {
   height: 30px; }
 
 .form__buttons {
-  border: lightgray;
+  border: #d3d3d3;
   border-radius: 15px;
-  background-color: lightgray;
+  background-color: #d3d3d3;
   width: 30%;
   height: 20px; }
 
 .form__buttons:hover {
   border: #326259;
   background-color: #326259;
-  color: white; }
+  color: #ffff; }
 
 @media (min-width: 1024px) {
   .form-content {
