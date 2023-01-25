@@ -1,24 +1,14 @@
-// .container-info-hotel {
-//   display: flex;
-//   flex-wrap: wrap; 
-//   align-items: center;
-// }
+.container__info__hotel--left, .container__info__hotel--right {
+  text-align: center;
+  width: 100%; 
+}
 
-// .left-item, .right-item {
-//   text-align: center;
-//   width: 100%; 
-// }
+.image {
+  width: 80%;
+  max-width: 362px;
+  object-fit: cover;
+  margin: 3%; 
+}
 
-// .image {
-//   width: 80%;
-//   max-width: 300px;
-//   object-fit: cover;
-//   margin: 0 auto; 
-// }
 
-// .text {
-//   width: 80%; 
-//   padding: 1em;
-//   text-align: left; 
-// }
 
