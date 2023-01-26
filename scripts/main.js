@@ -6,7 +6,7 @@ function Function() {
     // @ts-ignore
     intro.className = "oculto";
 
-    var intro = document.getElementById("holi");
+    var intro = document.getElementById("texto");
     // @ts-ignore
     intro.className = "textos";
     activo = 1;
@@ -14,7 +14,7 @@ function Function() {
 }
 function Function2() {
   if ((activo = 1)) {
-    var intro = document.getElementById("holi");
+    var intro = document.getElementById("texto");
     // @ts-ignore
     intro.className = "oculto";
     var intro = document.getElementById("cd");
