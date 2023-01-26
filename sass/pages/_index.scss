@@ -1,7 +1,4 @@
-body {
-  max-width: 1425px;
-  max-height: 2156px;
-}
+
 main {
   .main-container {
     display: inline;
@@ -63,7 +60,7 @@ main {
   .home_images {
     display: flex;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 748px) {
     .home_images {
       img {
         &:nth-child(1) {
@@ -76,16 +73,23 @@ main {
         }
       }
     }
+    .travel_list{
+      width: 74%;
+      margin-left: -3%;
+    }
     .main-container {
       li {
         width: 29%;
         height: 76%;
         margin: 5px;
       }
+      h2{
+
+      }
       p {
         width: 86%;
         height: auto;
-        font-size: 13px;
+        font-size: 8px;
         margin-top: -9%;
       }
     }

@@ -76,11 +76,6 @@ body {
     font-size: 20px;
   }
 }
-body {
-  max-width: 1425px;
-  max-height: 2156px;
-}
-
 main .main-container {
   display: inline;
 }
@@ -138,7 +133,7 @@ main section {
 main .home_images {
   display: flex;
 }
-@media (max-width: 960px) {
+@media (max-width: 748px) {
   main .home_images img:nth-child(1) {
     width: 48%;
     height: auto;
@@ -146,6 +141,10 @@ main .home_images {
   main .home_images img:nth-child(2) {
     width: 70%;
     height: auto;
+  }
+  main .travel_list {
+    width: 74%;
+    margin-left: -3%;
   }
   main .main-container li {
     width: 29%;
@@ -155,7 +154,7 @@ main .home_images {
   main .main-container p {
     width: 86%;
     height: auto;
-    font-size: 13px;
+    font-size: 8px;
     margin-top: -9%;
   }
 }
@@ -251,7 +250,7 @@ main .home_images {
     height: 40px;
   }
 }
-.image {
+.images {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 50%;
@@ -359,7 +358,7 @@ main .home_images {
   margin-top: 5%;
 }
 
-cards {
+.cards {
   width: 100%;
 }
 
@@ -437,6 +436,23 @@ header .login {
   margin: 3% 5%;
 }
 
+@media (max-width: 960px) {
+  header h2 {
+    margin: 3% 2%;
+    font-size: 30px;
+  }
+  header .navbar {
+    margin: 3% 2%;
+  }
+  header .navbar a {
+    font-size: 21px;
+  }
+  header button {
+    font-size: 21px;
+    width: 82px;
+    height: 30px;
+  }
+}
 .description__above--line {
   border-top: 1px solid #000;
 }
