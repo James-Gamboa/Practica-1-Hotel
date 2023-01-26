@@ -18,10 +18,15 @@
   padding: 5px;
   width: 40%;
   border-radius: 10px;
-  background-color: #326259;
-  color: $white;
+  background-color:$lightgray;
   font-size: 12px;
-  border: none;
+  border:$lightgray;
+}
+
+.popUp-buttom:hover{
+  border: $green;
+  background-color: $green;
+  color: $white;
 }
 
 .text {
