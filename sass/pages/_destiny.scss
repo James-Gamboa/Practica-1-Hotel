@@ -1,5 +1,5 @@
 .imageCont{
-  width: 90%;
+  width: 60%;
   margin: 20px auto 30px;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .text {
-  width: 100%;
-  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .textos {
@@ -60,5 +60,10 @@
     padding: 15px;
     font-size: 20px;
   }
-}
 
+  .oculto{
+    display: flex;
+    width: 60%;
+    margin: 40px auto 0px;
+  }
+}
