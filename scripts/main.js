@@ -1,4 +1,16 @@
-//Función para ocultar el contenido al cargar la página
+window.addEventListener("load", formDisplay);
+function formDisplay() {
+  var formulario = document.getElementById("form-content");
+  // @ts-ignore
+  if (formulario.style.display === "none") {
+    // @ts-ignore
+    formulario.style.display = "block";
+  } else {
+    // @ts-ignore
+    formulario.style.display = "none";
+  }
+}
+
 function ocultarContenido() {
   var intro = document.getElementById("cd");
   // @ts-ignore
@@ -8,29 +20,26 @@ function ocultarContenido() {
   intro.className = "oculto";
 }
 
-//Función para mostrar el contenido al hacer clic en el botón
-function mostrarContenido() {
+function showcontentDetails() {
   ocultarContenido();
   var intro = document.getElementById("cd");
   // @ts-ignore
   intro.className = "travel_list";
 }
 
-function mostrarContenido2() {
+function showcontentHotel() {
   ocultarContenido();
   var intro = document.getElementById("texto");
   // @ts-ignore
   intro.className = "textos";
 }
 
-//Llamar a la función ocultarContenido al cargar la página
 window.onload = ocultarContenido;
 
-//Agregar eventos de clic a los botones
-var boton1 = document.getElementById("boton1");
+var hotel = document.getElementById("hotel");
 // @ts-ignore
-boton1.addEventListener("click", mostrarContenido);
+hotel.addEventListener("click", showcontentDetails);
 
-var boton2 = document.getElementById("boton2");
+var detail = document.getElementById("detail");
 // @ts-ignore
-boton2.addEventListener("click", mostrarContenido2);
+detail.addEventListener("click", showcontentHotel);
