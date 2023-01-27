@@ -59,71 +59,34 @@ body {
   .container__info__hotel--left, .container__info__hotel--right p {
     font-size: 20px; } }
 
-main .main-container {
-  display: inline; }
-  main .main-container h1 {
-    text-align: center;
-    font-size: 32px; }
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px; }
 
-main .travel_list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 16px; }
-  main .travel_list li {
+p {
+  font-size: 14px; }
+
+.homeTitle {
+  text-align: center; }
+
+.homeImgCont {
+  width: 100%; }
+
+.homeImgCont__img {
+  width: 100%;
+  height: 100%; }
+
+.imgCont--heigth {
+  height: 205px; }
+
+@media (min-width: 720px) {
+  .main-conteiner {
     display: flex;
-    width: 25%;
-    height: auto;
-    background: #ffff;
-    border: 1px solid #1e1e1e;
-    border-radius: 52px;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    margin: 31.5px; }
-    main .travel_list li img {
-      margin: 16px;
-      width: 70%;
-      height: Auto;
-      border-radius: 37px; }
-  main .travel_list li:hover {
-    cursor: pointer;
-    transform: translateY(-5%); }
-  main .travel_list a {
-    text-decoration: none; }
-    main .travel_list a h2 {
-      margin: 0% 1; }
-  main .travel_list p {
-    width: 70%;
-    height: auto;
-    margin: 28px;
-    padding: 16px; }
-
-main .home_images {
-  display: flex; }
-  main .home_images img:nth-child(1) {
-    width: 40%;
-    height: auto; }
-  main .home_images img:nth-child(2) {
+    flex-wrap: wrap;
+    align-items: stretch;
     width: 60%;
-    height: auto; }
-
-@media (max-width: 960px) {
-  main .main-container li {
-    width: 29%;
-    height: 76%;
-    margin: 5px; }
-  main .main-container p {
-    width: 86%;
-    height: auto;
-    font-size: 13px;
-    margin-top: -9%; } }
-
-.oculto {
-  display: none; }
+    margin: 0px auto 0px; } }
 
 .form-content {
   width: 100%;
@@ -193,7 +156,7 @@ main .home_images {
     height: 40px; } }
 
 .imageCont {
-  width: 90%;
+  width: 60%;
   margin: 20px auto 30px; }
 
 .imageCont__img {
@@ -219,8 +182,8 @@ main .home_images {
   color: #ffff; }
 
 .text {
-  width: 100%;
-  text-align: center; }
+  width: 80%;
+  margin: 0 auto; }
 
 .textos {
   font-weight: 100;
@@ -240,7 +203,11 @@ main .home_images {
 @media (min-width: 1024px) {
   .popUp-buttom {
     padding: 15px;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .oculto {
+    display: flex;
+    width: 60%;
+    margin: 40px auto 0px; } }
 
 nav {
   width: 100%;
@@ -335,3 +302,33 @@ h2 {
   max-width: 362px;
   object-fit: cover;
   margin: 3%; }
+
+.card {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 55%;
+  margin: 0px auto 20px; }
+
+.imgCont {
+  width: 100%;
+  margin: 0px auto 15px auto; }
+
+.imgCont__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+
+@media (min-width: 720px) {
+  .imgCont {
+    width: 90%; }
+  .card {
+    padding: 10px 0px 0px;
+    width: 45%; }
+  .card__text {
+    width: 90%;
+    margin: 0 auto; } }
+
+@media (min-width: 1024px) {
+  .card {
+    width: 30%; } }
