@@ -11,35 +11,36 @@ function formDisplay() {
   }
 }
 
-function ocultarContenido() {
-  var intro = document.getElementById("cd");
+// window.onload = function () {
+//   document.getElementById("hotel").onclick = function () {
+//     document.querySelector("main").style.display = "";
+//     document.querySelector("#texto").style.display = "none";
+//     document.querySelector("#cd").style.display = "block";
+//   };
+//   document.getElementById("detail").onclick = function () {
+//     document.querySelector("main").style.display = "";
+//     document.querySelector("#texto").style.display = "block";
+//     document.querySelector("#cd").style.display = "none";
+//   };
+// };
+
+window.onload = function () {
   // @ts-ignore
-  intro.className = "oculto";
-  var intro = document.getElementById("texto");
+  document.querySelector("main #texto").style.display = "none";
   // @ts-ignore
-  intro.className = "oculto";
-}
-
-function showcontentDetails() {
-  ocultarContenido();
-  var intro = document.getElementById("cd");
+  document.querySelector("main #cd").style.display = "none";
   // @ts-ignore
-  intro.className = "travel_list";
-}
-
-function showcontentHotel() {
-  ocultarContenido();
-  var intro = document.getElementById("texto");
+  document.getElementById("hotel").onclick = function () {
+    // @ts-ignore
+    document.querySelector("main #texto").style.display = "none";
+    // @ts-ignore
+    document.querySelector("main #cd").style.display = "block";
+  };
   // @ts-ignore
-  intro.className = "textos";
-}
-
-window.onload = ocultarContenido;
-
-var hotel = document.getElementById("hotel");
-// @ts-ignore
-hotel.addEventListener("click", showcontentDetails);
-
-var detail = document.getElementById("detail");
-// @ts-ignore
-detail.addEventListener("click", showcontentHotel);
+  document.getElementById("detail").onclick = function () {
+    // @ts-ignore
+    document.querySelector("main #texto").style.display = "block";
+    // @ts-ignore
+    document.querySelector("main #cd").style.display = "none";
+  };
+};
