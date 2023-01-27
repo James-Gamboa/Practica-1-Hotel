@@ -119,7 +119,8 @@ main .travel_list a {
   text-decoration: none;
 }
 main .travel_list a h2 {
-  margin: 0% 1;
+  color: #1e1e1e;
+  margin: 0% 1px;
 }
 main .travel_list p {
   width: 70%;
@@ -150,12 +151,14 @@ main .home_images {
     width: 29%;
     height: 76%;
     margin: 5px;
+    font-size: 74%;
+    border-radius: 15%;
   }
   main .main-container p {
     width: 86%;
     height: auto;
     font-size: 8px;
-    margin-top: -9%;
+    margin: -1%;
   }
 }
 
