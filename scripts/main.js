@@ -11,19 +11,6 @@ function formDisplay() {
   }
 }
 
-// window.onload = function () {
-//   document.getElementById("hotel").onclick = function () {
-//     document.querySelector("main").style.display = "";
-//     document.querySelector("#texto").style.display = "none";
-//     document.querySelector("#cd").style.display = "block";
-//   };
-//   document.getElementById("detail").onclick = function () {
-//     document.querySelector("main").style.display = "";
-//     document.querySelector("#texto").style.display = "block";
-//     document.querySelector("#cd").style.display = "none";
-//   };
-// };
-
 window.onload = function () {
   // @ts-ignore
   document.querySelector("main #texto").style.display = "none";
