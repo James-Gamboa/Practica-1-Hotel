@@ -1,3 +1,4 @@
+window.addEventListener("load",formDisplay)
 function formDisplay() {
   var formulario = document.getElementById("form-content")
   // @ts-ignore
